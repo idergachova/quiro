@@ -474,6 +474,7 @@ html {
   font-size: 24rem;
   font-weight: 600; }
 .header__ul {
+  z-index: 99;
   display: flex;
   align-items: center;
   gap: 20px; }
