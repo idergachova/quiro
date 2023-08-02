@@ -1,0 +1,31 @@
+.header__search {
+    border-radius: 50rem;
+    background: var(--c-black);
+    padding: 14rem 15rem 14rem 18rem;
+    position: relative;
+
+    @include tablet {
+        display: none;
+    }
+}
+.search {
+
+    &__input {
+        width: 100%;
+        border: 0;
+        outline: 0;
+        display: inline-block;
+        background: transparent;
+        font-family: var(--ff);
+        color: var(--c-white);
+        padding-right: 24rem;
+    }
+
+    &__icon {
+    position: absolute;
+    right: 15rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+}
+

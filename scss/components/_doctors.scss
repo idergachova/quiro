@@ -1,0 +1,50 @@
+.doctors {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30rem;
+
+	&__card {
+       padding: 44rem 38rem 33rem 39rem;
+       background-color: var(--c-background);
+      border-radius: 20rem;
+	}
+
+	&__info {
+      display: flex;
+      align-items: center;
+      gap: 13rem;
+      margin-bottom: 25rem;
+	}
+
+	&__desc {
+      margin-bottom: 28rem;
+	}
+}
+
+.inrofmation {
+
+	&__name {
+      color: var(--c-text-main);
+      font-size: 20rem;
+      font-weight: 600;
+      margin-bottom: 3rem;
+
+      @include mobile{
+            font-size: 18rem;
+            }
+	}
+
+	&__specialization {
+      color: var(--c-text-secondary);
+      @include mobile{
+            font-size: 15rem;
+      }
+	}
+}
+
+.booking {
+    color: var(--c-background);
+    @include mobile{
+        font-size: 18rem;
+    }
+}

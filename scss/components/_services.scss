@@ -1,0 +1,46 @@
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30rem;
+    
+    &__card {
+        padding: 46rem 26rem 51rem 26rem;
+        background-color: var(--c-background);
+        border-radius: 15rem;
+        text-align: center;
+        transition: var(--transition);
+
+        &:hover {
+            background-color: var(--c-primary);
+
+            .sub-title, .services__desc, .link {
+                color: var(--c-white);
+            }
+            svg path {
+                fill: var(--c-white);
+            }
+        }
+    }
+
+    &__img {
+        margin-bottom: 27rem;
+        transition: var(--transition);
+    }
+
+    &__desc {
+        color: var(--c-text-secondary);
+        margin-bottom: 18rem;
+    }
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    color: var(--c-primary);
+    font-size: 16rem;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
